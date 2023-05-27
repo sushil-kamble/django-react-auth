@@ -1,6 +1,6 @@
-# Django Rest Auth
+# Django Rest Auth with React Vite - 2023
 
-## For Running the Project
+## Steps for Running Project
 
 ### Requirements
 
