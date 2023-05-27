@@ -28,6 +28,8 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
+> If their is any error activating virtual env, please google search it for your system or try `venv\bin\activate` or `source venv/bin/activate`
+
 ### 3. Install required packages
 
 ```bash
