@@ -69,7 +69,7 @@ npm i
 ### 2. Run the application
 
 ```bash
-yarn start # OR npm run start
+yarn dev # OR npm run dev
 ```
 
 > Make sure both frontend and backend are running.
