@@ -67,6 +67,16 @@ pnpm run dev
 
 > Make sure both frontend and backend are running.
 
+## Styling (Recommended)
+
+For enhanced styling with Tailwind CSS and shadcn/ui components, it is recommended to switch to the `feature/tailwind-shadcn-ui` branch:
+
+```bash
+git checkout feature/tailwind-shadcn-ui
+```
+
+This branch includes modern UI components and better styling architecture for the frontend.
+
 ## Recent Major Upgrades (2025)
 
 This project has been upgraded to use the latest stable versions of all dependencies:
