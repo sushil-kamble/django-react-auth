@@ -7,13 +7,13 @@ const Login = () => {
     const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const isLoggedIn = useAuthStore((state) => state.isLoggedIn);
+    const allUserData = useAuthStore((state) => state.allUserData);
 
     useEffect(() => {
-        if (isLoggedIn()) {
+        if (allUserData !== null) {
             navigate('/');
         }
-    }, []);
+    }, [allUserData, navigate]);
 
     const resetForm = () => {
         setUsername('');

@@ -15,7 +15,7 @@ const Private = () => {
             }
         };
         fetchData();
-    }, []);
+    }, [api]);
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {

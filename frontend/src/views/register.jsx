@@ -7,14 +7,14 @@ function Register() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [password2, setPassword2] = useState('');
-    const isLoggedIn = useAuthStore((state) => state.isLoggedIn);
+    const allUserData = useAuthStore((state) => state.allUserData);
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (isLoggedIn()) {
+        if (allUserData !== null) {
             navigate('/');
         }
-    }, []);
+    }, [allUserData, navigate]);
 
     const resetForm = () => {
         setUsername('');

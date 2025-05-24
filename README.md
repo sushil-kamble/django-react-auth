@@ -1,10 +1,13 @@
-# Django Rest Auth with React Vite - 2023
+# Django Rest Auth with React Vite - 2025
 
 ## Steps for Running Project
 
 ### Requirements
 
-`Python, Node, git`
+- **Python 3.9+**
+- **Node.js 18+**
+- **pnpm** (install with: `npm install -g pnpm`)
+- **git**
 
 ### Clone the repository:
 
@@ -51,28 +54,46 @@ python manage.py runserver
 ### 1. Installing packages
 
 ```bash
-yarn
+pnpm install
 ```
-
-<details><summary>If you don't have yarn installed</summary>
-<p>
-
-```bash
-npm i
-```
-
-> Remove **yarn.lock** as you will already have **package.lock**
-
-</p>
-</details>
 
 ### 2. Run the application
 
 ```bash
-yarn dev # OR npm run dev
+pnpm run dev
 ```
 
 > Make sure both frontend and backend are running.
+
+> Make sure both frontend and backend are running.
+
+## Recent Major Upgrades (2025)
+
+This project has been upgraded to use the latest stable versions of all dependencies:
+
+### Backend Updates
+- **Django**: 4.2 → 5.1.4 (latest stable)
+- **djangorestframework**: 3.14.0 → 3.15.2
+- **django-cors-headers**: 3.14.0 → 4.5.0
+- **PyJWT**: 2.6.0 → 2.10.1
+- All other Python packages updated to latest compatible versions
+
+### Frontend Updates
+- **React**: 18.2.0 → 18.3.1
+- **Vite**: 4.3.2 → 6.3.5 (major upgrade)
+- **ESLint**: 8.x → 9.x (flat config migration)
+- **React Router**: 6.10.0 → 6.30.1
+- **Zustand**: 4.x → 5.x
+- **jwt-decode**: 3.x → 4.x (breaking change handled)
+- **Prettier**: 2.x → 3.x
+- Package manager standardized to **pnpm**
+
+### Key Improvements
+- Enhanced build performance with Vite 6
+- Modern ESLint flat configuration
+- Updated security patches across all dependencies
+- Better development experience with latest tooling
+- Improved TypeScript support
 
 ## Reinitailize git repository
 

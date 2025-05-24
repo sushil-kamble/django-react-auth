@@ -2,13 +2,17 @@ import { Link } from 'react-router-dom';
 import { useAuthStore } from '../store/auth';
 
 const Home = () => {
-    const [isLoggedIn, user] = useAuthStore((state) => [
-        state.isLoggedIn,
-        state.user,
-    ]);
+    const allUserData = useAuthStore((state) => state.allUserData);
+    
+    const isLoggedIn = allUserData !== null;
+    const user = allUserData ? {
+        user_id: allUserData.user_id,
+        username: allUserData.username,
+    } : null;
+    
     return (
         <div>
-            {isLoggedIn() ? <LoggedInView user={user()} /> : <LoggedOutView />}
+            {isLoggedIn ? <LoggedInView user={user} /> : <LoggedOutView />}
         </div>
     );
 };
