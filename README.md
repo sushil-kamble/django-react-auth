@@ -63,6 +63,13 @@ pnpm install
 pnpm run dev
 ```
 
+#### "Quick start" from root folder:
+
+```bash
+cd backend/ && source venv/bin/activate && python manage.py runserver
+cd frontend/ && pnpm install && pnpm run dev
+```
+
 > Make sure both frontend and backend are running.
 
 > Make sure both frontend and backend are running.
