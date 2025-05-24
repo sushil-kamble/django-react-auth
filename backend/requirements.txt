@@ -3,7 +3,8 @@ autopep8==2.0.2
 Django==4.2
 django-cors-headers==3.14.0
 djangorestframework==3.14.0
-djangorestframework-simplejwt==5.2.2
+djangorestframework-simplejwt>=5.3.0
+setuptools>=65.0.0
 pycodestyle==2.10.0
 PyJWT==2.6.0
 pytz==2023.3
